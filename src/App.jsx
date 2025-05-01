@@ -2,13 +2,16 @@ import { useState } from 'react'
 import cutebabyone from './assets/cutebabytwo.jpeg'
 import cutebabytwo from '/cutebabyone.jpeg'
 import './App.css'
+import Profile from './components/Profile/Profile'
 
 function App() {
   const [count, setCount] = useState(0)
+  const size = 100
 
   return (
     <>
       <div>
+        <Profile size={size}/>
         count is {count}
         <a href="public/cutebabyone.jpeg" target="_blank">
           <img src={cutebabyone} className="logo" alt="Vite logo" />
