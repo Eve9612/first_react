@@ -3,14 +3,20 @@ import cutebabyone from './assets/cutebabytwo.jpeg'
 import cutebabytwo from '/cutebabyone.jpeg'
 import './App.css'
 import Profile from './components/Profile/Profile'
+import Video from './components/Video/Video'
+import Menu from './components/Menu/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
   const size = 100
+  let src="https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4"
+  
 
   return (
     <>
       <div>
+        <Menu/>
+        <Video src={src}/> 
         <Profile size={size}/>
         count is {count}
         <a href="public/cutebabyone.jpeg" target="_blank">
