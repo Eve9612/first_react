@@ -8,15 +8,21 @@ import Menu from './components/Menu/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [video, chooseVideo] = useState("fast")
   const size = 100
   let src="https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4"
-  
+  const VIDEOS = {
+    fast: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-fast.mp4',
+    slow: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-slow.mp4',
+    cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
+    eek: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-eek.mp4'
+  };
 
   return (
     <>
       <div>
-        <Menu/>
-        <Video src={src}/> 
+        <Menu chooseVideo={chooseVideo}/>
+        <Video src={VIDEOS[video]}/> 
         <Profile size={size}/>
         count is {count}
         <a href="public/cutebabyone.jpeg" target="_blank">
