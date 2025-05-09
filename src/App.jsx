@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import cutebabyone from './assets/cutebabytwo.jpeg'
-import cutebabytwo from '/cutebabyone.jpeg'
-import './App.css'
+import City from './assets/City.jpeg'
+import MachuPicchu from '/MachuPicchu.jpeg'
 import Profile from './components/Profile/Profile'
 import Video from './components/Video/Video'
 import Menu from './components/Menu/Menu'
@@ -25,11 +24,21 @@ function App() {
         <Video src={VIDEOS[video]}/> 
         <Profile size={size}/>
         count is {count}
-        <a href="public/cutebabyone.jpeg" target="_blank">
-          <img src={cutebabyone} className="logo" alt="Vite logo" />
+
+        
+        <a href="public/" target="_blank">
+          <img src={MachuPicchu} className="logo" 
+          alt="Vite logo"
+          width={300}
+          height={200}
+           />
         </a>
-        <a href="src/assets/cutebabytwo.jpeg" target="_blank">
-          <img src={cutebabytwo} className="logo react" alt="React logo" />
+
+        <a href="src/assets/" target="_blank">
+          <img src={City} className="logo react" 
+          alt="React logo" 
+          width={300}
+          height={200}/>
         </a>
       </div>
       <h1>Vite + React</h1>

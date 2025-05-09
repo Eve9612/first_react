@@ -2,10 +2,10 @@ function Avatar({size}){
 
     return (
         <img 
-            src="/me.jpeg" 
+            src="/Quechua.jpeg" 
             alt="Image Here" 
-            width={size}
-            height={size}
+            width={300}
+            height={200}
         />
     );
 }
