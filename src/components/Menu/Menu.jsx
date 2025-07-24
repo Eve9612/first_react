@@ -3,7 +3,7 @@ function Menu({chooseVideo}){
         const text = e.target.value;
         chooseVideo(text);
     }; 
-
+    
     return(
         <form onClick={handleClick}>
              <input type="radio" name="src" value="fast" /> fast

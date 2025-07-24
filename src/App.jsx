@@ -19,9 +19,10 @@ function App() {
 
   return (
     <>
+      
+        <Video src={VIDEOS[video]}/> 
       <div>
         <Menu chooseVideo={chooseVideo}/>
-        <Video src={VIDEOS[video]}/> 
         <Profile size={size}/>
         count is {count}
 
@@ -29,16 +30,16 @@ function App() {
         <a href="public/" target="_blank">
           <img src={MachuPicchu} className="logo" 
           alt="Vite logo"
-          width={300}
-          height={200}
+          width={150}
+          height={150}
            />
         </a>
 
         <a href="src/assets/" target="_blank">
           <img src={City} className="logo react" 
           alt="React logo" 
-          width={300}
-          height={200}/>
+          width={150}
+          height={150}/>
         </a>
       </div>
       <h1>Vite + React</h1>
