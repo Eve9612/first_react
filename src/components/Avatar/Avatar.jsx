@@ -4,8 +4,12 @@ function Avatar({size}){
         <img 
             src="/Quechua.jpeg" 
             alt="Image Here" 
-            width={150}
-            height={150}
+            width={40}
+            height={40}
+            style={{ 
+                borderRadius: '50%',  // Makes the image circular
+                objectFit: 'cover',   // Crops the image to fill the circle properly
+              }}
         />
     );
 }

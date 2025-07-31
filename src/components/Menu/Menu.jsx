@@ -5,13 +5,12 @@ function Menu({chooseVideo}){
     }; 
     
     return(
-        <form onClick={handleClick}>
-             <input type="radio" name="src" value="fast" /> fast
-             <input type="radio" name="src" value="slow" /> slow
-             <input type="radio" name="src" value="cute" /> cute
-             <input type="radio" name="src" value="eek" /> eek
-        </form>
-        
+        <div>
+          <button value="fast" onClick={handleClick}>Fast</button>
+          <button value="slow" onClick={handleClick}>Slow</button>
+          <button value="cute" onClick={handleClick}>Cute</button>
+          <button value="eek" onClick={handleClick}>Eek</button>
+        </div>
     );
 }
 

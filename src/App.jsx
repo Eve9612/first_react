@@ -19,14 +19,31 @@ function App() {
 
   return (
     <>
-      
-        <Video src={VIDEOS[video]}/> 
-      <div>
-        <Menu chooseVideo={chooseVideo}/>
-        <Profile size={size}/>
-        count is {count}
+      <div style={{
+        backgroundColor: '#FF0000', 
+        padding: '2px', 
+        textAlign: 'left', 
+        fontFamily: 'Roboto',
+        color: 'white'  
+      }}>
+      <h1> My First Vite + React Website</h1>
+      </div> 
 
-        
+      <div>
+      <h4 style={{
+        backgroundColor: '#BEBEBE', 
+        padding: '2px', 
+        textAlign: 'left', 
+        fontFamily: 'Roboto',
+        color: 'black' 
+      }}>Choose video speed</h4>
+      <Menu chooseVideo={chooseVideo}/>
+      </div>
+      
+      <Video src={VIDEOS[video]}/> 
+      <Profile size={size}/>
+    
+      <div>
         <a href="public/" target="_blank">
           <img src={MachuPicchu} className="logo" 
           alt="Vite logo"
@@ -42,18 +59,20 @@ function App() {
           height={150}/>
         </a>
       </div>
-      <h1>Vite + React</h1>
+      
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <button onClick={() => setCount((count) => count + 1)}>
+        Increase Count
+      </button>
+      <div>        
+        Count is {count}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      </div>
+
+      <p 
+      className="read-the-docs">
       </p>
+
     </>
   )
 }
